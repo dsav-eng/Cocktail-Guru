@@ -1,0 +1,26 @@
+<ng class="container" *ngIf="show">
+    <div class="jumbotron cocktail-options">
+        <div *ngIf="resByIng"> 
+            <div class="options-msg">
+                <h2> Greate Choice</h2>
+                 <h3>Here is what you can make</h3>
+            </div>
+            <ul class="list-group">
+                <li class = "list-group-item" 
+                *ngFor="let coctail of resByIng | slice:0:15" (click) = "onCocktailSelect(coctail.idDrink)">
+                <img class="img-thumbnail" style="width:10%" src="{{coctail.strDrinkThumb}}">
+                <span>{{coctail.strDrink}}</span>
+            </li>
+            </ul>
+        </div>
+    </div>
+</ng>
+
+<!---->
+<app-display-cocktail [cocktail] = "cocktail"></app-display-cocktail>
+
+<!---->
+<div *ngIf = "!show" (click) = "hide()">
+    <button type="button" class="btn btn-secondary back">Back to list of items you can make with</button>
+</div> 
+

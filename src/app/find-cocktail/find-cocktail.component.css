@@ -1,0 +1,45 @@
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
+
+.card {
+    border: 1px outset black;
+    margin: 5px;
+    text-align: center;
+    background-color: white;
+    size: 30px;
+
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    text-shadow: -1px 1px grey;
+    letter-spacing: 2px;
+    size: 30px;
+
+}
+
+.card:hover {
+    color: white;
+    background-color: black;
+    left: .3em;
+
+}
+
+.ing-image {
+    height: 70px;
+    width: 70px;
+}
+
+.ingridients {
+    text-align: center;
+    background-color: #6e6e6e;
+}
+
+
+h3{
+    text-shadow: 1px 1px white;
+    color: whitesmoke;
+
+}

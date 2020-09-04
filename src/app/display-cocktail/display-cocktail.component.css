@@ -1,0 +1,60 @@
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.card {
+    border: 5px solid black;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    text-shadow: -1px 1px grey;
+    letter-spacing: 2px;
+    size: 30px;
+}
+
+.t{
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    
+}
+
+.card-text {
+    font-family: 'Archivo', sans-serif;
+   letter-spacing: 0px;
+    size: 20px;
+}
+
+.table {
+    width: fit-content;
+}
+
+.flex-container {
+    text-align: center;
+}
+
+.card {
+    float: none;
+}
+
+.jumbotron {
+    background-color: #6e6e6e;
+}
+
+.instructions {
+    word-wrap: break-word;
+}
+
+#selected-cocktail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.me {
+    list-style-type: none;
+
+}

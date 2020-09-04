@@ -1,0 +1,38 @@
+<div class="container" *ngIf="cocktail">
+    <div class="jumbotron">
+      <div class="container" id="selected-cocktail">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="card" style="width: 20rem">
+              <div class="card-title">
+                <h4 calsscard-title>{{ cocktail.name }}</h4>
+              </div>
+              <div class="card-image">
+                <img class="card-img-top" src="{{ cocktail.image }}" alt="Card image cap"/>
+              </div>
+              <div class="card-body">
+                <h4>What you need</h4>
+                <div class="t" style="overflow-x: auto">
+                  <table class="table table-dark table-bordered table-responsive table-body">
+                    <tr>
+                      <th *ngFor="let ingridient of cocktail.ingridients">
+                        {{ ingridient }}
+                      </th>
+                    </tr>
+                    <tr>
+                      <td *ngFor="let measure of cocktail.ingridMeasure">
+                        {{ measure }}
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <h4>What you do</h4>
+                <p class="card-text">{{ cocktail.instructions }}</p>
+              </div> <!--end card-body-->
+            </div><!--end card-->
+          </div><!--end column-->
+        </div><!--end row-->
+      </div><!--end container select-cocktail-->
+    </div><!--end jumbotron-->
+  </div><!--end container-->
+  

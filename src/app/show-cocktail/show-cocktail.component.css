@@ -1,0 +1,42 @@
+.list-group li {
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    border: 1px dotted black;
+    margin: 5px;
+    color: black;
+
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 2px;
+    size: 30px;
+  }
+  
+  .list-group li:hover {
+    color: white;
+    background-color: black;
+    left: .1em;
+
+  }
+
+  span{
+    font-size: 18px;
+    margin-left: 25px;
+  }
+
+  .options-msg {
+    text-align: center;
+    text-shadow: 1px 1px white;
+    color: whitesmoke;
+  }
+
+  .cocktail-options {
+    background-color: #6e6e6e;
+  }
+
+  .back {
+    width: 100%;
+  }
+
+
+
+  

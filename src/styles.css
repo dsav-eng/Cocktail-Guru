@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+.back {
+    width: 100%;
+    border: 2px dotted red;
+    background-color: rgb(163, 129, 117);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
