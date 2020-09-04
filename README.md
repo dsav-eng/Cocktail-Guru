@@ -1,5 +1,12 @@
 # CocktailGuru
 
+Web App that helps users to make an awesome cocktail 
+The app contains multiple recepies pulled from by calling a free API
+
+Link to the app: https://dsav-eng.github.io/Cocktail-Guru/
+
+Implemented to demo knowlege **Angular** framework
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
 ## Development server
