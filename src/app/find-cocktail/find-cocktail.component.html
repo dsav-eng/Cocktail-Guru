@@ -14,8 +14,8 @@
             <div *ngFor="let item of [ingridients[i],ingridients[i + 1],ingridients[i + 2],ingridients[i + 3]]"
                   (click)="searchByIngridient(item.name)">
               <div *ngIf="item">
-                <div class="col-sm-3 col-xs-6">
-                  <div class="card" style="width: 10rem">
+                <div class="col-sm-12 col-xs-12">
+                  <div class="card" style="width: 12rem">
                     <div class="card-title">
                       <h4>{{ item.name }}</h4>
                     </div>

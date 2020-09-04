@@ -7,7 +7,7 @@
 
 .card {
     border: 1px outset black;
-    margin: 5px;
+    margin-top: 5px;
     text-align: center;
     background-color: white;
     size: 30px;
@@ -16,7 +16,13 @@
     font-family: 'Archivo', sans-serif;
     text-shadow: -1px 1px grey;
     letter-spacing: 2px;
-    size: 30px;
+      size: 30px;
+  
+}
+
+.row {
+    justify-content: center;
+
 
 }
 
