@@ -8,7 +8,7 @@
             <ul class="list-group">
                 <li class = "list-group-item" 
                 *ngFor="let coctail of resByIng | slice:0:15" (click) = "onCocktailSelect(coctail.idDrink)">
-                <img class="img-thumbnail" style="width:10%" src="{{coctail.strDrinkThumb}}">
+                <img class="img-thumbnail responsive" style="width:25%; height:auto" src="{{coctail.strDrinkThumb}}">
                 <span>{{coctail.strDrink}}</span>
             </li>
             </ul>

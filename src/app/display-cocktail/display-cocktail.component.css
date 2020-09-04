@@ -1,9 +1,3 @@
-.jumbotron {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 
 .card {
     border: 5px solid black;
