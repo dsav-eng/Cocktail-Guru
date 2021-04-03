@@ -1,51 +1,48 @@
-.jumbotron {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } 
-
+.change-base {
+  margin-top: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 3;
+  top: 0;
+}
 .card {
-    border: 1px outset black;
-    margin-top: 5px;
-    text-align: center;
-    background-color: white;
-    size: 30px;
+  border: 1px outset black;
+  margin-top: 5px;
+  text-align: center;
+  background-color: white;
+  size: 30px;
 
-    text-align: center;
-    font-family: 'Archivo', sans-serif;
-    text-shadow: -1px 1px grey;
-    letter-spacing: 2px;
-      size: 30px;
-  
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  text-shadow: -1px 1px grey;
+  letter-spacing: 2px;
+  size: 30px;
 }
 
 .row {
-    justify-content: center;
-
-
+  justify-content: center;
 }
 
 .card:hover {
-    color: white;
-    background-color: black;
-    left: .3em;
-
+  color: white;
+  background-color: black;
+  left: 0.3em;
 }
 
 .ing-image {
-    height: 70px;
-    width: 70px;
+  height: 70px;
+  width: 70px;
 }
 
-.ingridients {
-    text-align: center;
-    background-color: #6e6e6e;
+.bases {
+  text-align: center;
+  background-color: #6e6e6e;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
-
-h3{
-    text-shadow: 1px 1px white;
-    color: whitesmoke;
-
+h3 {
+  text-shadow: 1px 1px white;
+  color: whitesmoke;
 }

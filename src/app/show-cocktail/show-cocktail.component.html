@@ -1,26 +1,33 @@
-<ng class="container" *ngIf="show">
-    <div class="jumbotron cocktail-options">
-        <div *ngIf="resByIng"> 
-            <div class="options-msg">
-                <h2> Great Choice</h2>
-                 <h3>Here is what you can make</h3>
-            </div>
-            <ul class="list-group">
-                <li class = "list-group-item" 
-                *ngFor="let coctail of resByIng | slice:0:15" (click) = "onCocktailSelect(coctail.idDrink)">
-                <img class="img-thumbnail responsive" style="width:25%; height:auto" src="{{coctail.strDrinkThumb}}">
-                <span>{{coctail.strDrink}}</span>
-            </li>
-            </ul>
-        </div>
+<div class="container cocktail-options" *ngIf="show">
+  <div *ngIf="resByIng">
+    <div class="options-msg">
+      <h2>Great Choice</h2>
+      <h3>Here is what you can make</h3>
     </div>
-</ng>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let coctail of resByIng | slice: 0:15"
+        (click)="onCocktailSelect(coctail.idDrink)"
+      >
+        <img
+          class="img-thumbnail responsive"
+          style="width: 25%; height: auto"
+          src="{{ coctail.strDrinkThumb }}"
+        />
+        <span>{{ coctail.strDrink }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-<!---->
-<app-display-cocktail [cocktail] = "cocktail"></app-display-cocktail>
+<app-display-cocktail [cocktail]="cocktail"></app-display-cocktail>
 
-<!---->
-<div *ngIf = "!show" (click) = "hide()">
-    <button type="button" class="btn btn-secondary back">Back to cocktails you can make</button>
-</div> 
-
+<button
+  *ngIf="!show"
+  (click)="hide()"
+  type="button"
+  class="btn btn-secondary back"
+>
+  Back to cocktails you can make
+</button>

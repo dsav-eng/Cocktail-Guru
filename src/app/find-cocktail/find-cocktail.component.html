@@ -1,38 +1,45 @@
 <div class="container">
+  <button
+    type="button"
+    class="change-base btn btn-secondary back"
+    *ngIf="!show"
+    (click)="hide()"
+  >
+    I want to select another base
+  </button>
 
-    <div *ngIf="!show" (click)="hide()">
-      <button type="button" class="btn btn-secondary back">
-        I want to select another base
-      </button>
-    </div>
-  
-    <ng class="container" *ngIf="show">
-      <div class="jumbotron ingridients">
-        <h3>Pick your base</h3>
-        <div *ngFor="let ingridient of ingridients; let i = index">
-          <div class="row" *ngIf="i % 4 === 0">
-            <div *ngFor="let item of [ingridients[i],ingridients[i + 1],ingridients[i + 2],ingridients[i + 3]]"
-                  (click)="searchByIngridient(item.name)">
-              <div *ngIf="item">
-                <div class="col-sm-12 col-xs-12">
-                  <div class="card" style="width: 12rem">
-                    <div class="card-title">
-                      <h4>{{ item.name }}</h4>
-                    </div>
-                    <div class="card-image">
-                      <img class="ing-image" src="{{ item.image }}" alt="Card image cap"/>
-                    </div>
-                  </div><!--end card-->
-                </div><!-- End of column  -->
+  <div class="container bases" *ngIf="show">
+    <h3>Pick your base</h3>
+    <div *ngFor="let base of bases; let i = index">
+      <div class="row" *ngIf="i % 4 === 0">
+        <div
+          *ngFor="
+            let item of [bases[i], bases[i + 1], bases[i + 2], bases[i + 3]]
+          "
+          (click)="searchByIngridient(item.name)"
+        >
+          <div *ngIf="item">
+            <div class="col-sm-12 col-xs-12">
+              <div class="card" style="width: 12rem">
+                <div class="card-title">
+                  <h4>{{ item.name }}</h4>
+                </div>
+                <div class="card-image">
+                  <img
+                    class="ing-image"
+                    src="{{ item.image }}"
+                    alt="Card image cap"
+                  />
+                </div>
               </div>
             </div>
-          </div> <!-- End of row-->
+          </div>
         </div>
-      </div><!-- End of jumbotron  Ingridients-->
-    </ng>
-  
-      <div *ngIf="!show">
-        <app-show-cocktail [resByIng]="searchResults"></app-show-cocktail>
       </div>
-  </div><!-- End of container  -->
-  
+    </div>
+  </div>
+
+  <div *ngIf="!show">
+    <app-show-cocktail [resByIng]="searchResults"></app-show-cocktail>
+  </div>
+</div>
