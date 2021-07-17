@@ -54,4 +54,37 @@ export const baseOptions: base[] = [
     image:
       'https://www.thecocktaildb.com/images/ingredients/Advocaat-Small.png',
   },
+  {
+    name:'Cider',
+    image:'https://www.thecocktaildb.com/images/ingredients/Cider.png'
+  },
+  {
+    name:'Lager',
+    image:'https://www.thecocktaildb.com/images/ingredients/Lager.png'
+  },
+  {
+    name:'Red Wine',
+    image:'https://www.thecocktaildb.com/images/ingredients/Red Wine.png'
+  },
+  {
+    name:'White Wine',
+    image:'https://www.thecocktaildb.com/images/ingredients/White Wine.png'
+  },
+  {
+    name:'Bourbon',
+    image:'https://www.thecocktaildb.com/images/ingredients/Bourbon.png'
+  },
+  {
+    name:'Scotch',
+    image:'https://www.thecocktaildb.com/images/ingredients/Scotch.png'
+  }
+  ,
+  {
+    name:'Dry Vermouth',
+    image:'https://www.thecocktaildb.com/images/ingredients/Dry Vermouth.png'
+  },
+  {
+    name:'Crown Royal',
+    image:'https://www.thecocktaildb.com/images/ingredients/Crown Royal.png'
+  }
 ];

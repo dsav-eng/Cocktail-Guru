@@ -8,9 +8,9 @@ import { CocktailService } from '../cocktail-service.service';
   styleUrls: ['./find-cocktail.component.css'],
 })
 export class FindCocktailComponent implements OnInit {
-  searchResults;
+  public searchResults;
   private ingridient: string = 'filter.php?i=';
-  show: boolean = true;
+  public show: boolean = true;
   readonly bases = baseOptions;
 
   constructor(private cocktailService: CocktailService) {}
